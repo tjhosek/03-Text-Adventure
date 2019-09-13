@@ -23,8 +23,8 @@ def checkInput():
 def update(response, game, current):
     '''Update the State of the Game'''
     for i in game["rooms"][current]["exits"]:
-        if e["verb"] == response:
-            current = e["target"]
+        if i["verb"] == response:
+            current = i["target"]
     return current
 
 def main():
@@ -39,7 +39,7 @@ def main():
     quit = False
     while not quit:
         render(game, current)
-        current = checkInput(update(),game,current)
+        current = update(checkInput(),game,current)
 
     return True
 

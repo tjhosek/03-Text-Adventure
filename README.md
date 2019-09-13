@@ -1,4 +1,4 @@
 # 03-Text-Adventure
-Text adventure game
+A very simple text adventure game, where the player is thrown into a small labyrinth and has to escape using the clues granted by the descriptions. Run gameEngine.py to play.
 
-This is a test
+-Trevor

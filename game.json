@@ -39,40 +39,637 @@
       {
         "v": "W",
         "map": "WEST"
+      },
+      {
+        "v": "TAKE",
+        "map": "TAKE"
+      },
+      {
+        "v": "GRAB",
+        "map": "TAKE"
+      },
+      {
+        "v": "",
+        "map": ""
       }
     ],
     "rooms": {
-      "START": {
-        "name": "Starting place",
-        "desc": "This is the place to start!",
+      "A1": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel cold.",
         "exits": [
           {
-            "verb": "NORTH",
-            "target": "LOC2",
+            "verb": "EAST",
+            "target": "A2",
             "condition": ""
           },
           {
             "verb": "SOUTH",
-            "target": "LOC32",
-            "condition": ""
-          },
-          {
-            "verb": "WEST",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "EAST",
-            "target": "LOC2",
+            "target": "B1",
             "condition": ""
           }
         ],
         "inventory": []
       },
-      "LOC2": {
-        "name": "Location 2",
-        "desc": "Here is the second location.",
+      "A2": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel freezing.",
         "exits": [
+          {
+            "verb": "WEST",
+            "target": "A1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "A3": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel hot.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "A4",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "WIN",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "A4": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel hot.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "A3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "B4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "A5": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "A6",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "B5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "A6": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "A5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "B1": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel cold.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "A1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "B2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "B2": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel cold.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "C2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "B1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "B3": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "C3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "B4": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel hot.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "A4",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "C4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "B5": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "A5",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "B6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "B6": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "B5",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "C6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "C1": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel cold.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "C2",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "D1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "C2": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel cold.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "C1",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "B2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "C3": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "B3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "D3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "C4": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel hot.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "B4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "C5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "C5": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel hot.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "C4",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "D5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "C6": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "B6",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "D6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "D1": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "C1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "E1",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "D2": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "D3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "E2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "D3": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "C3",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "E3",
+            "condition": ""
+          },
+          {
+            "verb":"WEST",
+            "target":"D2",
+            "condition":""
+          }
+        ],
+        "inventory": []
+      },
+      "D4": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "E4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "D5": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel hot.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "C5",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "D6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "D6": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "C6",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "E6",
+            "condition": ""
+          },
+          {
+            "verb":"WEST",
+            "target":"D5",
+            "condition":""
+          }
+        ],
+        "inventory": []
+      },
+      "E1": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "D1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "E2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "E2": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "D2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "E1",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "F2",
+            "condition":""
+          }
+        ],
+        "inventory": []
+      },
+      "E3": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "D3",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "E4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "E4": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "D4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "E5",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "F4",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "E3",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "E5": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "E4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "E6",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "E6": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "D6",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "E5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F1": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "F2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F2": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "E2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "F1",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "F3",
+            "condition":""
+          }
+        ],
+        "inventory": []
+      },
+      "F3": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "F2",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F4": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel warm.",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "E4",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "F5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F5": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "EAST",
+            "target": "F6",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "F4",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F6": {
+        "name": "The Labyrinth",
+        "desc": "You are in a Labyrinth. You feel lukewarm.",
+        "exits": [
+          {
+            "verb": "WEST",
+            "target": "F5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "WIN": {
+        "name": "Outside the Labyrinth",
+        "desc": "You are outside the Labyrinth. You feel good!",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "END",
+            "condition": ""
+          }
         ],
         "inventory": []
       }
