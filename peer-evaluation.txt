@@ -1,0 +1,45 @@
+Name: Luccas Hallow 
+Date: 09/23/2019
+Project: Text Adventure
+Peer's repository: https://github.com/tjhosek/03-Text-Adventure.git
+
+
+
+What is something you learned by reviewing your peer's project?
+
+I saw a different way to create a game world within the confines of the text Adventure
+My peer decided to make a labyrinth in which the game world seems like it's barely changing, but you're slowly working your way to the end.
+I found that really interesting, and a unique way to accomplish this assignment. 
+
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+
+ The idea of creating a literal loop of gameplay, in which progress is almost illusory or unclear. I feel like the idea of this allows the player to feel like they are getting lost in a world very much unlike their own. Immersion is a concept that I find fascinating.
+
+
+What suggestions would you have for your peer to improve his/her code?
+
+ I think there is even more you can do with the labyrinth concept. Incorporating an inventory or map system so that it offers a slight hint of progress while the world maintains slightly encumbering would be really cool.
+
+
+What could have been clearer or better commented?
+
+ Notes on Any changes made to the game engine or anything changed beyond the locations in the game.json would have been a good indicator of work. 
+The ways in which the locations work or were thought through in the json.
+
+Was there anything in the code that was confusing to you? If so, what?
+
+ If there were any changes beyond just copy pasting new locations. the concept is great - it's just odd that there isn't something pushing that game loop further.
+
+Does the repository contain an appropriate LICENSE?
+
+ It does contain an appropriate LICENSE.
+
+What is something he/she could add to the README.md to make it more descriptive?
+
+ The motivation to create the game the way they did and set it in the setting they did would have been interesting. Just more detail about their process in general would have been a welcome addition.
+
+Pay a compliment to your peer based on the quality of his/her code.
+
+I think the general concept of a labyrinth text adventure is really interesting and could be expanded into an even greater and grander concept. 
